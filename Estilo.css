@@ -3,12 +3,15 @@
 
 h1 {
   color: azure;
-  font-size: 60px;
+  font-size: 4vw;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
 h2 {
-  color: azure;
+  color: azure; text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5vw;
 }
 
 ol {
@@ -33,6 +36,12 @@ ol {
 
 a{
   color: azure;
+}
+p{
+  font-size: 1.2vw;
+}
+li{
+  font-size: 1.2vw;
 }
 
 .ProfileImgStyle {
@@ -81,21 +90,11 @@ a{
 
 }
 
-.LinksStyle {
-  font-family: 'Titillium Web', sans-serif;
-  color: azure;
-  font-size: 18px;
-  width: 100%;
-}
 
-.SegmentosStyle {
-  font-family: 'Titillium Web', sans-serif;
-  color: azure;
-  font-size: 24px;
-}
+
+
 
 .BodyIndex {
-
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto auto;
@@ -110,10 +109,8 @@ a{
   border-width: 5px;
   border-color: rgba(37, 37, 37, 0.9);
   border-radius: 5px;
-  padding-left: 25%;
-  padding-right: 25%;
   text-align: center;
-  background-color: rgba(37, 37, 37, 0.5);
+  background-color: rgba(37, 37, 37, 0.9);
   margin: 0;
   height: auto;
 }
