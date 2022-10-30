@@ -112,6 +112,15 @@ li{
     "Studies Hobbies"; 
   grid-area: BodyCV; 
 }
+.BodyDOM{
+  display: grid; 
+  grid-template-columns: 50% 10% 40%; 
+  grid-template-rows: 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."; 
+  grid-area: BodyDOM; margin-top:5% ;
+}
 
 .Box1 {
   width: auto;
