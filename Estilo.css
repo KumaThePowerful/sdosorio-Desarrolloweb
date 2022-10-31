@@ -90,7 +90,15 @@ li{
 
 }
 
-
+.Container {
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 25% 75%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Header"
+    "Body"; 
+}
 
 
 
@@ -121,6 +129,16 @@ li{
     ". . ."; 
   grid-area: BodyDOM; margin-top:5% ;
 }
+.BodyFarmaOnline {
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 50% 50%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "Featured"
+    "Products"; 
+  grid-area: Body; 
+}
 
 .Box1 {
   width: auto;
@@ -149,22 +167,6 @@ li{
   margin-left: 10%; margin-top: 5%;
 }
 
-.imgFarmaciaFondo {
-  background-color: aqua;
-  border-color: blue;
-  width: 1000px;
-}
-
-.imgLogoFarmacia {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background-color: #B2DF8A;
-  left: 0;
-  top: 10;
-  border-radius: 100px;
-
-}
 
 .HeaderIndex {
   display: grid;
@@ -202,12 +204,60 @@ li{
     "Nombre";
   grid-area: Title;
 }
-
-.PortafolioIndex {
-  font-size: 60px;
-  font-family: 'Montserrat', sans-serif;
+.FOFeatured {
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 15% 85%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "FeaturedTitle"
+    "FeaturedImages"; 
+  grid-area: Featured; 
 }
+.FOFeaturedImages {
+  display: grid; 
+  grid-template-columns: 33% 33% 33%; 
+  grid-template-rows: 100%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."; 
+  grid-area: FeaturedImages; 
+ 
+}
+.FOProducts {
+  display: grid; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 15% 85%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "ProductsTitle"
+    "ProductsImages"; 
+  grid-area: Products; 
+}
+.FOProductsImages {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    ". . ."
+    ". . ."; 
+  grid-area: ProductsImages; 
+}
+.FOLogo{
 
-.main {
-  width: 100%;
+  position: absolute;
+  margin-top: 20%; margin-left: 42%;
+  background-color: #86c84d ; border-radius: 30%;
+  width: 20%;
+}
+.FOBG{
+height: 65%; width: 100%;
+}
+.FOTitle{
+  margin-top: 8%; margin-bottom: 2%; text-align: left;
+  margin-left: 2%;
+}
+.FOMedicamento{
+margin-left: 30%;width: 60%; height: auto;
 }
