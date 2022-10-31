@@ -100,8 +100,6 @@ li{
     "Body"; 
 }
 
-
-
 .BodyIndex {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -260,4 +258,15 @@ height: 65%; width: 100%;
 }
 .FOMedicamento{
 margin-left: 30%;width: 60%; height: auto;
+}
+.EJSSection{
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 100%; 
+  grid-template-rows: 20% 80%; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  grid-area: Ejercicio-1; 
 }
